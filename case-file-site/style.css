@@ -57,9 +57,22 @@ a { color: #0c3f76; }
   border-top: 1px solid #4e5863;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0 14px;
   color: #ecf0f4;
   font-size: 0.88rem;
+}
+
+.taskbar::after {
+  content: "H. Poirot";
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding-left: 30px;
+  background-image: url("assets/person_pic.png");
+  background-size: 22px 22px;
+  background-repeat: no-repeat;
+  background-position: left center;
 }
 
 .desktop-panel {
@@ -125,26 +138,34 @@ a { color: #0c3f76; }
 }
 
 .file-link {
-  display: block;
+  display: flex;
+  align-items: stretch;
   border: 1px solid #8d9198;
   border-radius: 8px;
   text-decoration: none;
   background: #ececef;
   color: #121212;
-  padding: 10px;
+  padding: 12px 10px;
+  min-height: 168px;
 }
 
 .file-link:hover { background: #ffffff; }
 
 .file-line {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 8px;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 10px;
+  text-align: center;
+  line-height: 1.2;
+  word-break: break-word;
 }
 
 .small-icon {
-  width: 18px;
-  height: 18px;
+  width: 96px;
+  height: 96px;
   object-fit: contain;
 }
 
