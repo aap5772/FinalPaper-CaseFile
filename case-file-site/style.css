@@ -199,4 +199,13 @@ a { color: #0c3f76; }
   padding: 12px;
 }
 
+.md-content {
+  margin: 0;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-family: inherit;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
 .redacted { letter-spacing: 1px; }
